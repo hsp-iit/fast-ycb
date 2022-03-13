@@ -42,6 +42,12 @@ In order to download the dataset `curl`, `jq`, `unzip` and `zip` are required.
 
 We provide [python](tools/python/sample.py) sample code to access the information contained in the dataset.
 
+```console
+pip install -r tools/python/requirements.txt
+bash tools/python/sample.py <object_name>
+```
+where `<object_name>` might be `003_cracker_box`, `004_sugar_box`, `005_tomato_soup_can`, `006_cracker_box`, `009_gelatin_box`, `010_potted_meat_can`.
+
 <p align="center"><img src="https://github.com/hsp-iit/fast-ycb/blob/release/assets/sample_rgbd_flow.png" alt="" /></p>
 
 ## Citing Fast-YCB

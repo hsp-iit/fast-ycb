@@ -11,11 +11,12 @@ from dataset_loader import Loader
 import cv2
 import imgviz
 import numpy
+import sys
 
 
 def main():
-    fastycb_path = 'path_to_fastycb'
-    object_folder = '003_cracker_box'
+    fastycb_path = './'
+    object_folder = sys.argv[1]
     loader = Loader(path = fastycb_path, object_folder = object_folder)
 
     # Print useful information
