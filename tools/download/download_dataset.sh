@@ -15,11 +15,9 @@ for i in $(seq 0 $NUM_FILES); do
 done
 
 # Unzip all objects
-for object_name in 003_cracker_box 004_sugar_box 005_tomato_soup_can 006_mustard_bottle 009_gelatin_box 010_potted_meat_can; do
-    zip -F ${object_name}.zip --out ${object_name}_all.zip
-    unzip ${object_name}_all.zip
+for object_name in 003_cracker_box 004_sugar_box 005_tomato_soup_can 006_mustard_bottle 009_gelatin_box 010_potted_meat_can 003_cracker_box_real 006_mustard_bottle_real; do
+    zip -F ${object_name}.zip --out tmp.zip
+    rm ${object_name}.z*
+    unzip tmp.zip
+    rm tmp.zip
 done
-
-# Remove temporary files
-rm *.z0*
-rm *.zip
