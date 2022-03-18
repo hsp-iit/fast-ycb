@@ -1,5 +1,5 @@
 SERVER=https://dataverse.iit.it
-PERSISTENT_ID=doi:10.48557/YK6RZZ
+PERSISTENT_ID=doi:10.48557/G2QJDM
 VERSION=:latest
 TOKEN=
 
