@@ -2,7 +2,7 @@
   Fast-YCB
 </h1>
 
-<p align="center"><img src="https://github.com/hsp-iit/fast-ycb/blob/release/assets/sample.gif" alt="" /></p>
+<p align="center"><img src="https://github.com/hsp-iit/fast-ycb/blob/main/assets/sample.gif" alt="" /></p>
 
 ## Description
 
@@ -48,7 +48,7 @@ bash tools/python/sample.py <object_name>
 ```
 where `<object_name>` might be `003_cracker_box`, `004_sugar_box`, `005_tomato_soup_can`, `006_cracker_box`, `009_gelatin_box`, `010_potted_meat_can`.
 
-<p align="center"><img src="https://github.com/hsp-iit/fast-ycb/blob/release/assets/sample_rgbd_flow.png" alt="" /></p>
+<p align="center"><img src="https://github.com/hsp-iit/fast-ycb/blob/main/assets/sample_rgbd_flow.png" alt="" /></p>
 
 ## Citing Fast-YCB
 
