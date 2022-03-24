@@ -18,7 +18,7 @@ done
 # Unzip all objects
 for object_name in 003_cracker_box 004_sugar_box 005_tomato_soup_can 006_mustard_bottle 009_gelatin_box 010_potted_meat_can 003_cracker_box_real 006_mustard_bottle_real; do
     echo "Unzipping file ${object_name}.zip..."
-    zip -F ${object_name}.zip --out tmp.zip
+    zip -qq -F ${object_name}.zip --out tmp.zip
     rm ${object_name}.z*
     unzip -qq tmp.zip
     rm tmp.zip
