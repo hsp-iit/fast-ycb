@@ -8,6 +8,9 @@
 
 This is the repository associated to the dataset Fast-YCB presented in the publication [ROFT: Real-Time Optical Flow-Aided 6D Object Pose and Velocity Tracking](https://github.com/hsp-iit/roft).
 
+The dataset is hosted in the [IIT Dataverse](https://dataverse.iit.it/) and it is identified by following [![DOI:10.48557/G2QJDM](http://img.shields.io/badge/DOI-10.48557/G2QJDM-0a7bbc.svg)](https://doi.org/10.48557/G2QJDM).
+
+
 The dataset contains 6 synthetic sequences comprising objects from the [YCB Model Set](https://www.google.com/search?q=ycb+model+set&oq=ycb+model+set&aqs=chrome..69i57j0i22i30j69i59j69i60l3.2631j0j7&sourceid=chrome&ie=UTF-8). The trajectories of the object are characterized by moderate-to-fast motions and can be used to benchmark 6D object pose tracking algorithms.
 
 The dataset provides RGB, depth, optical flow, segmentation (ground truth and from Mask R-CNN) and 6D object poses (ground truth and from NVIDIA DOPE).
