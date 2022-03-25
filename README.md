@@ -70,6 +70,20 @@ doi={10.1109/LRA.2021.3119379}
 }
 ```
 
+and the Dataset
+
+```bibtex
+@data{G2QJDM_2022,
+author = {Piga, Nicola A. and Onyshchuk, Yuriy and Pasquale, Giulia and Pattacini, Ugo and Natale, Lorenzo},
+publisher = {IIT Dataverse},
+title = {{Fast-YCB Dataset}},
+year = {2022},
+version = {V1},
+doi = {10.48557/G2QJDM},
+url = {https://doi.org/10.48557/G2QJDM}
+}
+```
+
 ## Maintainer
 
 This repository is maintained by:
