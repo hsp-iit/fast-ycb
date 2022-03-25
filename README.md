@@ -70,7 +70,7 @@ doi={10.1109/LRA.2021.3119379}
 }
 ```
 
-and the Dataset
+and the Dataset:
 
 ```bibtex
 @data{G2QJDM_2022,
