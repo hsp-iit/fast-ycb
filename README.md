@@ -47,7 +47,7 @@ We provide [python](tools/python/sample.py) sample code to access the informatio
 
 ```console
 pip install -r tools/python/requirements.txt
-bash tools/python/sample.py <object_name>
+python tools/python/sample.py <object_name>
 ```
 where `<object_name>` might be `003_cracker_box`, `004_sugar_box`, `005_tomato_soup_can`, `006_cracker_box`, `009_gelatin_box`, `010_potted_meat_can`.
 
