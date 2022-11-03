@@ -103,3 +103,12 @@ class Loader():
                 ) / type_scaling[frame_type]
 
         return flow
+
+
+    def get_mask(self, number):
+        """Get the mask frame given the frame number."""
+
+        if not self._is_valid_frame(number):
+            raise ValueError('The frame with frame number ' + str(number) + ' does not exist.')
+
+        return cv2.imread(os.path.join(self._path, 'masks', 'gt', self._object_name + '_' + str(number) + '.png'))
