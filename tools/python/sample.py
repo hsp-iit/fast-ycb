@@ -30,6 +30,7 @@ def main():
         rgb = loader.get_rgb(i)
         depth = loader.get_depth(i)
         flow = loader.get_optical_flow(i)
+        mask = loader.get_mask(i)
 
         # Render depth and optical flow using RGB colors
         depth_render = imgviz.depth2rgb(depth, min_value = 0.3, max_value = 1.5, colormap = 'rainbow')
@@ -39,11 +40,12 @@ def main():
         scale = 0.4
         height = int(rgb.shape[0] * scale)
         width = int(rgb.shape[1] * scale)
-        render = numpy.empty([height, 3 * width, 3], 'uint8')
+        render = numpy.empty([height, 4 * width, 3], 'uint8')
 
         render[:, : width] = cv2.resize(rgb, (width, height))
         render[:, width : 2 * width] = cv2.resize(depth_render, (width, height))
         render[:, 2 * width : 3 * width] = cv2.resize(flow_render, (width, height))
+        render[:, 3 * width : 4 * width] = cv2.resize(mask, (width, height))
 
         cv2.imshow('', render)
         cv2.waitKey(33)
