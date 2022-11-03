@@ -17,7 +17,7 @@ import sys
 def main():
     fastycb_path = './'
     object_folder = sys.argv[1]
-    loader = Loader(path = fastycb_path, object_folder = object_folder)
+    loader = Loader(path = fastycb_path, object_name = object_folder)
 
     # Print useful information
     print('# frames: ', loader.get_number_frames())

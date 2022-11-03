@@ -16,10 +16,11 @@ import struct
 
 class Loader():
 
-    def __init__(self, path, object_folder):
+    def __init__(self, path, object_name):
         """Constructor."""
 
-        self._path = os.path.join(path, object_folder)
+        self._path = os.path.join(path, object_name)
+        self._object_name = object_name
         self._number_frames = None
 
         self._load_number_frames()
