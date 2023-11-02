@@ -28,6 +28,15 @@ Specifically, the dataset contains (for each object folder):
 - `gt/poses_ycb.txt` : ground truth 6D poses (PoseCNN YCB Model set format)
 - `gt/velocities.txt` : ground truth velocities
 
+### Format of poses
+The format of the poses is
+
+$$ [ x, y, z, n_x, n_y, n_z, \theta] $$
+
+where $p = (x, y, z)$ is the translation vector while $n = (n_x, n_y, n_z)$ is the axis of rotation and $\theta$ is the angle of rotation in radiant.
+
+The pose represents the transformation from the camera frame to the object frame.
+
 ### A note on additional sequences
 
 The object folders `003_cracker_box_real` and `006_mustard_bottle_real` contain additional sequences acquired with a real Intel RealSense D415 camera. These are not labeled (i.e. they miss the `masks/gt` and the whole `gt` folders).
